@@ -50,9 +50,9 @@ CREATE TABLE Editorial(
 	Nombre VARCHAR(100) NOT NULL,
 	Telefono VARCHAR(20) NULL,
 	Correo VARCHAR(100) NULL,
-	IdPais INT NOT NULL,
+	IdCiudad INT NOT NULL,
 	CONSTRAINT pkEditorial PRIMARY KEY (Id),
-	CONSTRAINT fkEditorial_Pais FOREIGN KEY (IdPais) REFERENCES Pais(Id)
+	CONSTRAINT fkEditorial_Ciudad FOREIGN KEY (IdCiudad) REFERENCES Ciudad(Id)
 )
 GO
 
